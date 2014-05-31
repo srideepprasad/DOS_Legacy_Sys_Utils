@@ -1,0 +1,6 @@
+[submodule "WinInfo"]
+	path = WinInfo
+	url = https://github.com/srideepprasad/DOS_Legacy_Sys_Utils/WinInfo.git
+[submodule "WinCrit"]
+	path = WinCrit
+	url = https://github.com/srideepprasad/DOS_Legacy_Sys_Utils/WinCrit.git

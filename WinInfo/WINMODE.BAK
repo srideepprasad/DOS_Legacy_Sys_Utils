@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+char m,n;
+asm{
+   mov ax,0x1600
+   int 0x2f
+   mov m,al
+   mov n,ah
+   }
+switch (m)
+   {
+   case 0: printf("Windows not detected \n"); break ;
+   case 0x1:printf("Windows 386/2.x is running \n"); break;
+   case
+
+
+
+

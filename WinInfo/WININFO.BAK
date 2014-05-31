@@ -1,0 +1,28 @@
+#include <iostream.h>
+#include <conio.h>
+#include <stdio.h>
+
+void GetWinver(char &mver,char &minver)
+{
+char mv,minv;
+asm{
+   mov ax,0x1600
+   int 0x2f
+   mov mv,al
+   mov minv,ah
+   }
+   mver=mv;
+   minver=minv;
+}
+
+
+
+void main()
+{
+char m,n;
+GetWinver(m,n);
+printf("Windows Version:%i.%i",m,n);
+EnableClose();
+getch();
+}
+
